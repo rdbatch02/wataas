@@ -1,0 +1,17 @@
+{
+  "name": "wat",
+  "version": "1.0.0",
+  "description": "Wat generator",
+  "main": "index.html",
+  "dependencies": {
+    "picnic": "^6.3.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "start": "http-server ."
+  },
+  "author": "Ryan Batchelder",
+  "license": "MIT"
+}

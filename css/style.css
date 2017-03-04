@@ -1,0 +1,24 @@
+html, body {
+    background-color: #FDFEFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #41627F;
+    color: #FDFEFF;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1em;
+}
+
+#content-container {
+    width: 100%;    
+}
+
+#content {
+    width: 70%;
+    text-align: center;    
+    margin: 0 auto;
+}
