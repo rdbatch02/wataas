@@ -12,6 +12,7 @@ deploy:
   secret_access_key:
     secure: UDmw1a9zf6P1VuPhT8jqRqKQWBo8B/mv6Qi8tbQROkqgLHWLX+w0mp4bJ7BrWwvNQ5IKp41zpkHoiMP+k7x86wznMZ7JeuGxKsFEDWQTOQJcnLdYtJc27Pt+18Zv4AeOe5B/rakfxVBIGkqgEndmRM/RuWutWt4ZmyFxvXWrEvilahAJdNvgM88Z5gYv38l1bKKpqVEEPGeuy1pB/Twpy4EWKIlxMhWByBFwCkeLNJ6DS9XolH3OdweeJLeWusL/SMNV3uq/bzVGnSttgXGU7nzQOQrI0R/TYXTZ3VLtWU0qdQ1ARy6bh2lkxffY3EOqPJ3yPL9G2oCWKp4j8oSuqyhy4B+YLqaSpV72+ubDYtmpQb0CTCgALIl2y0nevJfCdrnGFca4VQ8+UZEhmXcfA13h3EszFZjmKwTxWOLZietHdOf9zykEljQgKAfRXsw3dP7UpFLQP+5GRBq7QPBJC/U0i5AUBhgdGexB7Vuz6hWf8vMlQ3UPzrazRpTVLkP9GYSG7luTTagtvDsy3r0910f62/XpZz890NYDndq16CsFb3wPQcIKr97mNEIQS8OUH+LnULCXS+O3NbWYu4gMUo0cj400F2cFfrPjMe5zsvUopT9x/R/UKdO+1gK0wJzP9YtjTiKMEN6QftuNgjkdwxDX9jnUpxpCLQQ7rLC9xPI=
   bucket: wataas
-  acl: public_read
+  region: 'us-east-1'
+  skip_cleanup: true  
   on:
     repo: c1phr/wataas
