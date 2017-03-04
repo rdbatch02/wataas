@@ -1,6 +1,8 @@
 language: node_js
 node_js: "6"
-install: yarn install --production
+# install: yarn install --production
+env:
+  - NODE_ENV=production
 script: return 0
 cache: yarn
 
