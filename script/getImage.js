@@ -4,19 +4,21 @@ var shareLink = document.getElementById('wat-link');
 document.addEventListener("DOMContentLoaded", function() {
     var imgParam = window.location.hash.match('[A-Za-z0-9]+');
     if (imgParam != null) {
-        setWatImg(imageBase + imgParam[0]);
+        setWatImg(imageBase + imgParam[0], false);
     } else {
         loadRandomWat();
     }
 });
 
-function setWatImg(url) {
+function setWatImg(url, setHash) {
     if (url.indexOf('.jpg') === -1) {
         url += '.jpg';
     }
     document.getElementById('wat-img').src = url;
     var imagePathArr = url.split('/');
-    window.location.hash = imagePathArr[imagePathArr.length - 1].replace('.jpg', '');
+    if (setHash) {
+        window.location.hash = imagePathArr[imagePathArr.length - 1].replace('.jpg', '');
+    }
 
     shareLink.href = window.location.href;
     shareLink.innerText = window.location.href;
@@ -26,7 +28,7 @@ function loadRandomWat() {
     var watbtn = document.getElementById('wat-btn');
     watbtn.disabled = true;
     httpGet('https://6l8u0zp261.execute-api.us-east-1.amazonaws.com/dev/WataaS', function(data) {
-        setWatImg(data['image']);
+        setWatImg(data['image'], true);
         watbtn.disabled = false;
     });
 }
