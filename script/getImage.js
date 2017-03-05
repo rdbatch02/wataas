@@ -1,4 +1,4 @@
-var imageBase = window.location.href.indexOf('localhost') > -1 ? 'https://6l8u0zp261.execute-api.us-east-1.amazonaws.com/dev/images/' : window.location.href;
+var imageBase = window.location.href.indexOf('localhost') > -1 ? 'https://6l8u0zp261.execute-api.us-east-1.amazonaws.com/dev/images/' : window.location.host + '/images/';
 var shareLink = document.getElementById('wat-link');
 
 document.addEventListener("DOMContentLoaded", function() {
