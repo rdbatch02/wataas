@@ -1,4 +1,4 @@
-var imageBase = 'https://s3.amazonaws.com/watwat.us/';
+var imageBase = 'https://s3.amazonaws.com/watwat.us/images/';
 var shareLink = document.getElementById('wat-link');
 
 document.addEventListener("DOMContentLoaded", function() {
